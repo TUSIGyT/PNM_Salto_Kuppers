@@ -2,8 +2,8 @@
 
 Repositório creado para gestionar y almacenar los codigos relacionados al proyecto desarrollado en el PNM Salto Kuppers.
 
-* [Prerparando ambiente de desarrollo](Prerparando-ambiente-de-desarrollo)
-* []
+* [Prerparando ambiente de desarrollo](#Prerparando-ambiente-de-desarrollo)
+* [Importando datos](#Importando-datos)
 
 ## Prerparando ambiente de desarrollo:
 Para este proyecto, usaremos:
@@ -26,7 +26,8 @@ Una vez instalado, basta acceder a la carpeta donde hiciste el colne del present
 `poetry install`
 
 ### Docker
-Para saber al respecto de docker, visite <https://www.docker.com/>
+Para saber al respecto de docker, visite <https://www.docker.com/>.
+
 Para saber como instalar docker, visite <https://docs.docker.com/desktop/>
 
 #### Creando imagen PostGIS en Docker
@@ -36,14 +37,15 @@ Descargand la imagen _PostGIS_
 
 #### Instalando e configurando el container:
 `docker run --name postgis -e POSTGRES_PASSWORD=postgres -d postgis/postgis`
+
 No dejes de crear un archivo `.env` con la variable de ambiente `DB_URL`, talcual como presentado en [env-sample](env-sample).
 
 ##### Iniciando el container al prender la computadora
 `docker start postgis`
+
 :warning: Si por algún motivo haz cambiado el parámetro `--name` en el paso anterior, considere que tendrás que usar en el presente comando el nombre usado.
 
 ### Creando la base de datos `pnm_salto_kuppers`
-
 ```commandline
 # usando PSQL del docker 
 docker exec -ti postgis psql -U postgres
