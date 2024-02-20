@@ -1,4 +1,4 @@
-# Inventário de especies nativas y análisis de calidad del agua, através de la detección y manipulación de imágenes digitales aéreas en el Parque Natural Municipal Salto Kuppers de la ciudad de Eldorado 
+# Inventario de especies nativas y análisis de calidad del agua, a través de la detección y manipulación de imágenes digitales aéreas en el Parque Natural Municipal Salto Kuppers de la ciudad de Eldorado. 16/F1540-TI UNaM - FCF.
 
 Repositório creado para gestionar y almacenar los codigos relacionados al proyecto desarrollado en el PNM Salto Kuppers.
 
